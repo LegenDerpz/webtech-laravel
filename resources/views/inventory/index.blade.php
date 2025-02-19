@@ -9,11 +9,11 @@
 <body>
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-10 col-sm-12">
+            <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <div class="d-flex justify-content-between mb-3">
-                            <h4 class="card-title">Inventory</h4>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="card-title m-0">Inventory</h4>
                             <button class="btn btn-success">Add Inventory</button>
                         </div>
                         <div class="table-responsive">
