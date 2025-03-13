@@ -12,3 +12,5 @@ Route::post('/login', 'App\Http\Controllers\LoginController@authenticate');
 Route::get('/inventory', 'App\Http\Controllers\InventoryController@index');
 
 Route::get('/hello', 'App\Http\Controllers\HelloController@index');
+
+Route::get('/categories', 'App\Http\Controllers\CategoryController@index');
