@@ -19,7 +19,13 @@
              <a class="nav-link" href="/">Home</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="/about">About</a>
+             <a class="nav-link" href="/inventory">Inventory</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="/categories">Categories</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="/add-items">Add Items</a>
            </li>
          </ul>
       </div>

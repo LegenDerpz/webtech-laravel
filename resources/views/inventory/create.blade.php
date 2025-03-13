@@ -1,17 +1,22 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add Item</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  </head>
+  </head> -->
+@extends('template.main')
+
+@section('title', 'Add Item')
+
+@section('content')
   <body>
     <div class="container vh-100 d-flex justify-content-center align-items-center">
       <div class="row justify-content-center w-100">
         <div class="col-sm-12 col-md-8 col-lg-5">
           <div class="card shadow-lg p-4 position-relative">
-            <button class="btn btn-primary position-absolute top-0 start-0 m-3">Back</button>
+            <button class="btn btn-primary position-absolute top-0 start-0 mb-3">Back</button>
 
             <form class="mt-5">
               <div class="mb-3 row align-items-center">
@@ -55,6 +60,7 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+@endsection
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
   </body>
 </html>
