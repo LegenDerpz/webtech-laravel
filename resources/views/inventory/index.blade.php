@@ -1,12 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body> -->
 @extends('template.main')
 
 @section('title', 'Inventory')
@@ -33,46 +24,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Computer</td>
-                                        <td>Lenovo</td>
-                                        <td>80</td>
-                                        <td>$50,000</td>
-                                        <td>
-                                            <button class="btn btn-info btn-sm">Edit</button>
-                                            <button class="btn btn-danger btn-sm">Delete</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Computer</td>
-                                        <td>Lenovo</td>
-                                        <td>80</td>
-                                        <td>$50,000</td>
-                                        <td>
-                                            <button class="btn btn-info btn-sm">Edit</button>
-                                            <button class="btn btn-danger btn-sm">Delete</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Computer</td>
-                                        <td>Lenovo</td>
-                                        <td>80</td>
-                                        <td>$50,000</td>
-                                        <td>
-                                            <button class="btn btn-info btn-sm">Edit</button>
-                                            <button class="btn btn-danger btn-sm">Delete</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Computer</td>
-                                        <td>Lenovo</td>
-                                        <td>80</td>
-                                        <td>$50,000</td>
-                                        <td>
-                                            <button class="btn btn-info btn-sm">Edit</button>
-                                            <button class="btn btn-danger btn-sm">Delete</button>
-                                        </td>
-                                    </tr>
+                                    @foreach($items as $item)
+                                        <tr>
+                                            <td>{{$item->category->category_name}}</td>
+                                            <td>{{$item->name}}</td>
+                                            <td>{{$item->quantity}}</td>
+                                            <td>{{$item->price}}</td>
+                                            <td>
+                                                <a href="/inventory/update/{{$item->id}}" class="btn btn-info btn-sm mr-1">Edit</button>
+                                                <a href="/inventory/update/{{$item->id}}" class="btn btn-danger btn-sm mr-1">Delete</button>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

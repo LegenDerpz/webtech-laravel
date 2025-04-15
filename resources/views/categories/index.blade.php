@@ -10,6 +10,7 @@
             <tr>
                 <th>ID</th>
                 <th>Category Name</th>
+                <th>Description</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -18,9 +19,10 @@
                 <tr>
                     <td>{{ $category->id }}</td>
                     <td>{{ $category->category_name }}</td>
+                    <td>{{ $category->category_description }}</td>
                     <td>
-                        <button class="btn btn-info btn-sm">Edit</button>
-                        <button class="btn btn-danger btn-sm">Delete</button>
+                        <a href="/categories/update/{{$category->id}}" class="btn btn-info btn-sm mr-2">Edit</button>
+                        <a href="" class="btn btn-danger btn-sm">Delete</button>
                     </td>
                 </tr>
             @endforeach
